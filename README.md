@@ -1,6 +1,17 @@
 # clean
 Cleans up after Copado
 
+# Criteria for removal
+
+There are two criterial for removal, one of which can be removed all together
+
+1. The branch has not been committed to in 4 months
+  - A log of these branches can be found with `git log $branch --since "4 months ago"`
+  - The count of these branches can be found with `git log $branch --since "4 months ago" | wc -l`
+2. The branches that have already been merged into the master branch (and may be stale)
+  - These can be found with `git branch -r --merged`
+  - This criteria can be disabled with the `soft` argument, and enabled with the `hard` argument
+
 # Usage
 
 1. Clone the repository that you would like to clean
@@ -18,7 +29,11 @@ cd your_repo
 ```
 git fetch -a
 ```
-4. Run your command either as a dry run for testing or as a wet run
+4. Ensure you are on the `master` branch
+```
+git checkout master
+```
+5. Run your command either as a dry run for testing or as a wet run
 
 ## Dry Run
   
