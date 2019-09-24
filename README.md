@@ -1,5 +1,6 @@
-# clean
-Cleans up after Copado
+# Clean
+
+Cleans up after Copado.
 
 # Criteria for removal
 
