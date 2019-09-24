@@ -39,10 +39,10 @@ path/to/the/script testme hard
 From within your repository, run the `clean.sh` script using the `dome` and `soft` arguments for a soft dry run and the `dome` and `hard` arguments for a hard dry run.
 
 ```
-// soft dry run
+// soft wet run
 path/to/the/script dome soft
 
-// hard dry run
+// hard wet run
 path/to/the/script dome hard
 ```
 
